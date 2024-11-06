@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No 2</title>
+    <style>
+        #tble {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        }
+
+        #tble td, #tble th {
+        border: 1px solid #000000;
+        padding: 8px;
+        }
+        .nama-siswa {
+            background-color: #fbb;
+        }
+
+        .kegiatan {
+            background-color: #bfffbf;
+        }
+
+        .hari {
+            background-color: #d9d9ff;
+        }
+
+        .jam {
+            background-color: #ffffcc;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h4>Data Pendaftaran Kegiatan Ekstrakurikuler</h4>
+        <table id="tble">
+            <tr>
+                <th class="nama-siswa" rowspan="2">Nama Siswa</th>
+                <th class="kegiatan" rowspan="2">Kegiatan</th>
+                <th class="hari" colspan="2">Jadwal</th>
+            </tr>
+            <tr>
+                <th class="hari">Hari</th>
+                <th class="jam">Jam</th>
+            </tr>
+            <tr>
+                <td rowspan="2" class="nama-siswa">Rina</td>
+                <td class="kegiatan">Basket</td>
+                <td class="hari">Senin</td>
+                <td class="jam">15:00 - 16:30</td>
+            </tr>
+            <tr>
+                <td class="kegiatan">Musik</td>
+                <td class="hari">Kamis</td>
+                <td class="jam">14:00 - 15:30</td>
+            </tr>
+            <tr>
+                <td class="nama-siswa">Dina</td>
+                <td class="kegiatan">Pramuka</td>
+                <td class="hari">Rabu</td>
+                <td class="jam">15:30 - 17:00</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

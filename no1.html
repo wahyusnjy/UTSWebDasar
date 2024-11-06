@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pengajuan Pinjaman</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px 0;
+        box-sizing: border-box;
+        }
+
+        .flex-item {
+        box-sizing: border-box;
+        padding: 15px 18px;
+        font-size: 16px;
+        border: 1px solid #777;
+        flex: 1;
+        min-width: 33.33%;
+        }
+
+        .form-container {
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .form-container img {
+            width: 80px;
+            height: auto;
+        }
+
+        .form-container h2 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin: 10px 0 20px;
+        }
+
+        .form-group {
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .form-group select {
+            font-size: 16px;
+            appearance: none;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            font-size: 16px;
+        }
+
+        .radio-group label {
+            font-weight: normal;
+        }
+
+        .radio-group input {
+            margin-right: 5px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            height: 60px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+<div class="form-container">
+    <div class="flex-container">
+        <img class="flex-items" src="https://lms.unindra.ac.id/media_public/get_gambar/d2llSWJaazRBRUtSZ2lFQm15V3RiZi9GV3oyd09zSGdTdXlOVjVyR0Zsc20yWkxNc3J4dUNFdi9MbENKd2ZYSg==" alt="University Logo">
+        <h2 class="flex-items" style="margin-left: 25%;">Formulir Pengajuan Pinjaman</h2>
+        <img class="flex-items" style="margin-left: 25%;" src="https://lms.unindra.ac.id/media_public/get_gambar/d2llSWJaazRBRUtSZ2lFQm15V3RiZi9GV3oyd09zSGdTdXlOVjVyR0Zsc20yWkxNc3J4dUNFdi9MbENKd2ZYSg==" alt="University Logo">     
+    </div>
+    <form>
+        <div class="form-group">
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="ktp">Nomor KTP:</label>
+            <input type="text" id="ktp" name="ktp" required>
+        </div>
+        <div class="form-group">
+            <label for="loan-amount">Jumlah Pinjaman:</label>
+            <select id="loan-amount" name="loan-amount" required>
+                <option>Rp 10 juta</option>
+                <option>Rp 20 juta</option>
+                <option>Rp 30 juta</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Jenis Pinjaman:</label>
+            <div class="radio-group">
+                <input type="radio" id="konsumtif" name="loan-type" value="Konsumtif" required>
+                <label for="konsumtif">Konsumtif</label>
+                <input type="radio" id="produktif" name="loan-type" value="Produktif" required>
+                <label for="produktif">Produktif</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="address">Alamat:</label>
+            <textarea id="address" name="address" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Ajukan</button>
+    </form>
+</div>
+
+</body>
+</html>
